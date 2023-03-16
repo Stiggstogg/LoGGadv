@@ -92,6 +92,9 @@ export default class HomeScene extends Phaser.Scene {
         // Add keyboard inputs
         this.addKeys();
 
+        // Transfer automatically to the cities scene
+        this.scene.start('World');
+
     }
 
     // Creates the menu with its entries and sets the styles for it

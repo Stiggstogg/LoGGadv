@@ -1,6 +1,7 @@
 import Phaser from 'phaser';
 
 import Sponge from '../sprites/Sponge'
+import World from "../helper/World";
 
 // "Game" scene: Scene for the main game
 export default class GameScene extends Phaser.Scene {
@@ -46,6 +47,8 @@ export default class GameScene extends Phaser.Scene {
 
         // Add keyboard inputs
         this.addKeys();
+
+        new World();
 
     }
 

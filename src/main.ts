@@ -6,14 +6,14 @@ import Phaser from 'phaser'
 import BootScene from './scenes/BootScene';
 import LoadingScene from './scenes/LoadingScene';
 import HomeScene from './scenes/HomeScene';
-import GameScene from './scenes/GameScene';
+import WorldScene from './scenes/WorldScene';
 
 // Phaser 3 config
 const config: Phaser.Types.Core.GameConfig = {
     type: Phaser.AUTO,
     width: 800,
     height: 600,
-    scene: [BootScene, LoadingScene, HomeScene, GameScene],
+    scene: [BootScene, LoadingScene, HomeScene, WorldScene],
     title: 'My Game',                  // Shown in the console
     scale: {
         mode: Phaser.Scale.FIT,
