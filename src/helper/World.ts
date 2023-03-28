@@ -1,6 +1,6 @@
 // World class
 import City from "./City";
-import Place from "./Place";
+import Place from "../sprites/Place";
 
 export default class World {
 

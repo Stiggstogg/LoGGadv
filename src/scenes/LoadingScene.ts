@@ -1,5 +1,9 @@
 import Phaser from 'phaser';
-import spongeImg from '../assets/images/sponge.jpeg';
+import place1Img from '../assets/images/place1.png';
+import place2Img from '../assets/images/place2.png';
+import place3Img from '../assets/images/place3.png';
+import place4Img from '../assets/images/place4.png';
+import worldMapJson from '../assets/json/worldMap.json';
 
 // "Loading" scene: Loads all assets and shows a progress bar while loading
 export default class LoadingScene extends Phaser.Scene {
@@ -63,10 +67,16 @@ export default class LoadingScene extends Phaser.Scene {
         }, this);
 
         // load images
-        this.load.image('sponge', spongeImg);
+        this.load.image('place1', place1Img);
+        this.load.image('place2', place2Img);
+        this.load.image('place3', place3Img);
+        this.load.image('place4', place4Img);
 
         // load audio
         //this.load.audio('miss', 'assets/audio/Pew.mp3');
+
+        // load json
+        this.load.json('worldMap', worldMapJson);
 
     }
 

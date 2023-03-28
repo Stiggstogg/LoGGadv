@@ -1,4 +1,4 @@
-import Place from './Place'
+import Place from '../sprites/Place'
 
 // City class
 export default class City {
